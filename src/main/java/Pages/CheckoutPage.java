@@ -19,6 +19,8 @@ public class CheckoutPage {
 		    By continutbtn = By.xpath("//input[@name='continue']");
 		    By finalcheckout = By.xpath("//button[@id='finish']");
 		    By goback = By.xpath("//button[text()='Back Home']");
+		    By slider = By.xpath("//button[@id='react-burger-menu-btn']");
+		    By logout = By.xpath("//a[text()='Logout']");
 		    
 		    public void Checkout() throws InterruptedException {
 		    	
@@ -33,7 +35,11 @@ public class CheckoutPage {
 		    	driver.findElement(finalcheckout).click();
 		    	Thread.sleep(2500);
 		    	driver.findElement(goback).click();
+		    	Thread.sleep(1500);
 		    	System.out.println("Checkout successfully completed & page redirect to Home Page");
+		    	driver.findElement(slider).click();
+		    	Thread.sleep(1500);
+		    	driver.findElement(logout).click();
 		    }
 		    
 		

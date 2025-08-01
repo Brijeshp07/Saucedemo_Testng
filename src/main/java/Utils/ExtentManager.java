@@ -10,6 +10,7 @@ public class ExtentManager {
 	     ExtentReports extent = new ExtentReports();
 	     extent.attachReporter(reporter);
 	     return extent;
+	
     }
 
 }

@@ -5,9 +5,12 @@
     <classes>
       <class name="Test.EndtoEnd">
         <methods>
+          <include name="Invalid"/>
           <include name="flushReport"/>
-          <include name="Product2"/>
+          <include name="Product1"/>
           <include name="setupReport"/>
+          <include name="teardown"/>
+          <include name="Checkout"/>
         </methods>
       </class> <!-- Test.EndtoEnd -->
     </classes>
